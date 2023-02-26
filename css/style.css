@@ -1,0 +1,45 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5f0e9;
+    height: 100px;
+    width: 100%;
+}
+
+#div-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 95%;
+    height: 100%;
+}
+
+#div-nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+    width: 25vw;
+}
