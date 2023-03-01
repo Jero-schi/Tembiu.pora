@@ -123,8 +123,19 @@ main {
     font-size: 2rem;
 }
 
+.div-img-productos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
 .etiqueta-productos img {
     width: 150px;
+}
+
+.etiqueta-productos p {
+    padding-bottom: 45px;
 }
 
 #ubicacion {
@@ -201,4 +212,5 @@ footer div a {
 
 footer div a img {
     width: 75px;
+    margin-bottom: 15px;
 }
