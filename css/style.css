@@ -176,45 +176,6 @@ main {
     width: 100%;
 }
 
-/* #div-titulo-main {
-    text-align: center;
-}
-
-#div-productos {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.etiqueta-productos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #F2FF95;;
-    border: 3px solid #216966;
-    border-radius: 220px;
-    width: 230px;
-    height: 350px;
-    font-size: 2rem;
-}
-
-.div-img-productos {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 50%;
-}
-
-.etiqueta-productos img {
-    width: 150px;
-}
-
-.etiqueta-productos p {
-    padding-bottom: 45px;
-} */ 
-
 #ubicacion {
     display: flex;
     flex-direction: column;
