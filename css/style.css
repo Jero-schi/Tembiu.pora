@@ -16,6 +16,10 @@ ul {
     padding-inline-start: 00px
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
     width: 100%;
