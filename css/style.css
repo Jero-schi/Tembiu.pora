@@ -175,6 +175,13 @@ main {
     font-size: 1.5rem;
 }
 
+.etiqueta-ubi div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+
 .etiqueta-ubi p {
     font-size: 1.5rem;
 }
