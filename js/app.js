@@ -28,6 +28,15 @@ const icon           = document.querySelectorAll('.icons-ubi')
 const pMañana        = document.getElementById('p-mañana')
 const pTarde         = document.getElementById('p-tarde')
 
+function hoverOscuro(img, p) {
+    iconoUbi.src = img
+    pMañana.innerHTML = p
+}
+
+function hoverClaro(img, p) {
+    iconoUbi.src = img
+    pMañana.innerHTML = p
+}
 
 etiquetaMañana.addEventListener('mouseover', ()=> {
     iconoUbi.src = './imgs/ubi-claro.svg'
