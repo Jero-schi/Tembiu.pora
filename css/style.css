@@ -305,7 +305,7 @@ footer div a img {
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
 
     header {
         position: fixed;
