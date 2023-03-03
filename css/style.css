@@ -166,6 +166,7 @@ main {
 
 .carrousel .img p {
     padding-bottom: 1em;
+    text-align: center;
 }
 
 .carrousel .puntos {
@@ -300,6 +301,34 @@ footer div a img {
     }
 }
 
+@media (max-width: 615px) {
+    #div-nav {
+        justify-content: flex-start;
+        padding: 1em;
+        gap: 15vw;
+    }
+
+    #div-nav-links {
+        gap: 1em;
+    }
+
+    #div-nav-links a {
+        font-size: 1rem;
+    }
+
+    .carrousel .img {
+        border: 2px solid #216966;
+    }
+
+    .carrousel .img p {
+        font-size: 1.3rem;
+    }
+
+    .h3-ubi, .p-ubi {
+        font-size: 1.3rem;
+    }
+
+}
 
 @media (max-width: 450px) {
 
@@ -313,13 +342,17 @@ footer div a img {
         height: 50px;
     }
 
+    #div-nav {
+        gap: 25vw;
+    }
+
     #div-nav img{
         width: 40px;
     }
 
     #div-nav-links {
-        width: 50%;
-        gap: .2em;
+        width: 100%;
+        gap: 2vw;
     }
 
     #div-nav-links a {
@@ -327,7 +360,7 @@ footer div a img {
     }
 
     #hero {
-        height: 60%;
+        height: 60vh;
         padding-top: 50px;
         font-size: 1.2rem;
     }
@@ -338,27 +371,27 @@ footer div a img {
 
     main {
         font-size: 1rem;
-        height: 40%;
-        /* justify-content: flex-start; */
+        height: 60vh;
     }
 
     #div-titulo-main {
         margin-top: 1em;
+        font-size: 1rem;
     }
 
     .carrousel {
-        width: 90%;
-        padding: .7em;
+        width: 90vw;
+        /* padding: .7em; */
     }
 
     .carrousel .grande {
-        padding: .8em 1.3em;
+        padding: .8em 0;
     }
 
     .carrousel .img {
-        height: 100px;
-        width: 65px;
-        font-size: .6rem;
+        /* height: 100px;
+        width: 65px; */
+        /* font-size: .6rem; */
         border: 2px solid #216966;
         padding: 0 .4em;
         text-align: center;
@@ -369,8 +402,12 @@ footer div a img {
         height: 45px;
     }
 
+    .carrousel .img p {
+        font-size: 1rem;
+    }
+
     #ubicacion {
-        height: 50%;
+        height: 60vh;
     }
 
     #titulo-ubi {
@@ -405,5 +442,9 @@ footer div a img {
 
     footer div a {
         font-size: 1rem;
+    }
+
+    footer div a img {
+        width: 10vw;
     }
 }
