@@ -41,9 +41,10 @@ nav {
 #div-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2em;
+    gap: 30vw;
     width: 100%;
     height: 100%;
 }
@@ -56,9 +57,10 @@ nav {
 #div-nav-links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;    
-    width: 40%
+    width: 100%;
+    gap: 2em;
 }
 
 #div-nav-links a {
@@ -79,7 +81,7 @@ nav {
     font-family: 'Dancing Script', cursiva;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    padding-top: 90px;
+    padding-top: 80px;
     height: 100%;
     width: 100%;
 }
@@ -92,13 +94,32 @@ nav {
 }
 
 #img-hero {
-    width: 455px;
-    margin-bottom: 50px;
+    width: 50vw;
+    max-width: 450px;
+    margin-bottom: 5vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #A1D6CB 0%, #56B0A0 100%);
+    color: #216966;
+    font-size: 2rem;
+    font-family: 'Allan', cursive; 
+    letter-spacing: 0.1rem;
+    height: calc(100vh + 80px);
+    width: 100%;
+}
+
+#div-titulo-main {
+    margin: 1.5em 0;
+
 }
 
 .carrousel {
-    width: 80%;
-    padding: 1em;
+    width: calc(30vw * 3);
     overflow: hidden;
 
     display: flex;
@@ -106,17 +127,14 @@ nav {
     align-items: flex-start;
 }
 
-#div-titulo-main {
-    margin-top: 2em;
-}
-
 .carrousel .grande {
     width: 233%;
-    padding: 1em 1.5em;
+    padding: 1em;
+    gap: 2vw;
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     transition: all .5s ease;
@@ -124,7 +142,7 @@ nav {
 }
 
 .carrousel .img {
-    width: calc(100% / 7 - 2em);
+    /* width: calc(100% / 7 - 2em); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -132,14 +150,18 @@ nav {
     background-color: #F2FF95;;
     border: 3px solid #216966;
     border-radius: 220px;
-    width: 230px;
-    height: 350px;
+    width: 23vw;
+    max-width: 245px;
+    height: 40vw;
+    max-height: 350px;
     font-size: 2rem;
 }
 
 .carrousel .img img {
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    max-width: 150px;
+    height: 15vw;
+    max-height: 150px;
 }
 
 .carrousel .img p {
@@ -166,19 +188,6 @@ nav {
 
 .carrousel .punto.activo {
     background-color: orange;
-}
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(180deg, #A1D6CB 0%, #56B0A0 100%);
-    color: #216966;
-    font-size: 2rem;
-    font-family: 'Allan', cursive; 
-    letter-spacing: 0.1rem;
-    height: calc(100% + 90px);
-    width: 100%;
 }
 
 #ubicacion {
@@ -210,47 +219,17 @@ main {
     justify-content: space-evenly;
     align-items: center;
     background-color: #D5F0E9;
-    border-radius: 110px;
-    width: 280px;
-    height: 480px;
+    border-radius: 12vw;
+    width: 30vw;
+    max-width: 280px;
+    height: 50vw;
+    max-height: 480px;
 }
 
 .etiqueta-ubi:hover {
     background-color: #216966;
     color: #D5F0E9;
 }
-/* 
-#etiqueta-mañana {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #D5F0E9;
-    border-radius: 110px;
-    width: 280px;
-    height: 480px;
-}
-
-#etiqueta-mañana:hover {
-    background-color: #216966;
-    color: #D5F0E9;
-}
-
-#etiqueta-tarde {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #D5F0E9;
-    border-radius: 110px;
-    width: 280px;
-    height: 480px;
-}
-
-#etiqueta-tarde:hover {
-    background-color: #216966;
-    color: #D5F0E9;
-} */
 
 .h3-ubi {
     font-size: 1.5rem;
@@ -285,7 +264,7 @@ footer div {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 30px;
 }
 
 footer div a {
@@ -297,6 +276,8 @@ footer div a {
     font-size: 1.3rem;
     font-family: 'Allan', cursive;
     letter-spacing: 0.1rem;
+    width: 30vw;
+    max-width: 280px;
 }
 
 footer div a img {
@@ -304,12 +285,27 @@ footer div a img {
     margin-bottom: 15px;
 }
 
+@media (max-width: 1000px) {
 
-@media (max-width: 360px) {
+    #div-titulo-main {
+        font-size: 1.5rem;
+    }
+
+    .carrousel .grande {
+        padding: 1em 0;
+    }
+
+    .carrousel .img p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 450px) {
 
     header {
         position: fixed;
-        width: 360px;
+        width: 100vw;
         height: 50px;
     }
 
@@ -331,7 +327,7 @@ footer div a img {
     }
 
     #hero {
-        height: 40%;
+        height: 60%;
         padding-top: 50px;
         font-size: 1.2rem;
     }
