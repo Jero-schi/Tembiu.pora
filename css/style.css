@@ -32,6 +32,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #D5F0F0;
+    box-shadow: 25px 25px 25px 10px rgba(33,105,102,0.1);
     color: #216966;
     height: 80px;
     width: 100%;
@@ -151,6 +152,7 @@ main {
     align-items: center;
     background-color: #F2FF95;;
     border: 3px solid #216966;
+    box-shadow: 25px 25px 25px 10px rgba(33,105,102,0.4);
     border-radius: 220px;
     width: 23vw;
     max-width: 245px;
@@ -222,6 +224,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     background-color: #D5F0E9;
+    box-shadow: 25px 25px 25px 10px rgba(30, 104, 101, 0.4);
     border-radius: 12vw;
     width: 30vw;
     max-width: 280px;
