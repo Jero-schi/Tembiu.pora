@@ -31,7 +31,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #d5f0e9;
+    background-color: #D5F0F0;
     color: #216966;
     height: 80px;
     width: 100%;
@@ -82,7 +82,7 @@ nav {
     font-size: 1.8rem;
     letter-spacing: 1px;
     padding-top: 80px;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
@@ -91,6 +91,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    max-width: 75vw;
 }
 
 #img-hero {
@@ -200,7 +202,7 @@ main {
     color: #216966;
     font-family: 'Allan', cursive; 
     letter-spacing: 0.1rem;
-    height: calc(100% + 90px);
+    height: 100vh;
 }
 
 #titulo-ubi {
@@ -257,7 +259,7 @@ footer {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, #226B68 0%, #216966 100%);
-    height: 50%;
+    height: 50vh;
 }
 
 footer div {
@@ -433,7 +435,7 @@ footer div a img {
     }
 
     footer {
-        height: 20%;
+        height: 20vh;
     }
 
     footer div {
